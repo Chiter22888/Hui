@@ -41,9 +41,7 @@ def reply_keyboard(chat_id, text):
     reply_markup ={ "keyboard": [["Привет", "Hello"], [{"request_location":True, "text":"Где я нахожусь"}]], "resize_keyboard": True, "one_time_keyboard": True}
     data = {'chat_id': chat_id, 'text': text, 'reply_markup': json.dumps(reply_markup)}
     requests.post(f'{URL}{TOKEN}/sendMessage', data=data)
-  def run():
-    update_id = get_updates()[-1]['update_id'] # Сохраняем ID последнего отправленного сообщения боту
-    while True:
+  
         time.sleep(2)
         messages = get_updates(update_id) # Получаем обновления
         for message in messages:
