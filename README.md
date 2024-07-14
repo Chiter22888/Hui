@@ -35,7 +35,7 @@ apt install git
 ЧТО ДЕЛАТЬ ДАЛЬШЕ?
 
 КЛОНИРУЕМ РЕПОЗИТ0РИЙ -
-git clone https://github.com/Chiter22888/Hui/new/main?filename=README.md
+git clone https://github.com/Chiter22888/Hui
 
 ОТКРЫВАЕМ -
 cd Hui
